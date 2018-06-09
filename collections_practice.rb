@@ -7,7 +7,7 @@ end
 
 
 
-def sort_array_desc
+def sort_array_desc(array)
   array = array.new
   array.sort
   array.reverse
