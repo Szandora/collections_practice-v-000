@@ -36,3 +36,17 @@ def find_a(array)
   end
   a_words
 end
+
+def sum_array(array)
+  array.reduce(:+)
+end
+
+def add_s(array)
+  array.each_with_index.collect do |word, index|
+    if index != 1
+      word + "s"
+    else
+      word
+    end
+  end
+end
