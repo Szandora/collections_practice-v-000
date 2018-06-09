@@ -18,9 +18,9 @@ end
 
 
 def sort_array_char_count(array)
-  array = array.new 
-  array.length 
-  sort array length 
+  array = array.new
+  array.length
+  sort array length
 end
 array
 end
@@ -28,7 +28,7 @@ end
 
 
 def swap_elements(array)
-  array = array.new 
+  array = array.new
   array swap index[1] and index[2]
 end
 array
@@ -47,7 +47,7 @@ end
 
 def reverse_array(array)
   array = array.new
-  array.reverse 
+  array.reverse
 end
 array
 end
@@ -55,7 +55,7 @@ end
 
 
 def kesha_maker(array)
-  array = array.new 
+  array = array.new
 array.each do |something|
   something = $
 end
@@ -75,7 +75,7 @@ end
 
 def sum_array(array)
   array = array.new
-  array adds 
+  array adds
 end
 array
 end
@@ -86,8 +86,5 @@ def add_s(array)
   array = array.new
   add s to each element except 1
 end
-array 
+array
 end
-
-
-
