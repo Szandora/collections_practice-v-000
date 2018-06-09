@@ -10,3 +10,7 @@ end
 def sort_array_desc
   array = array.new
   array.sort
+  array.reverse
+end
+array
+end
