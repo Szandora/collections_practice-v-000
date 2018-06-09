@@ -1,19 +1,38 @@
 def sort_array_asc(array)
   array.sort
 end
-
-sort_array_asc([25, 7, 1])
-
+	 
 def sort_array_desc(array)
-  array.sort
-    array.reverse
-  end
+  array.sort { |a, b| b <=> a }
 end
 
-sort_array_desc([25, 7, 14])
-
 def sort_array_char_count(array)
-  array.sort do |left, right|
-    left.length <=> right.length
+  array.sort { |a, b| a.length <=> b.length }
+end
+
+def swap_elements(array)
+  array.sort { |a, b| a[2] <=> b[1] }
+end
+
+def reverse_array(array)
+  array.reverse
+end
+
+def kesha_maker(array)
+  kesha = []
+  array.each do |name|
+    name[2] = "$"
+    kesha << name
   end
+  kesha
+end
+
+def find_a(array)
+  a_words = []
+  array.select do |word|
+    if word.start_with?("a")
+      a_words << word
+    end
+  end
+  a_words
 end
