@@ -1,90 +1,73 @@
 def sort_array_asc(array)
-  array = []
   array.sort
 end
-array
-end
 
-
+sort_array_asc([25, 7, 1])
 
 def sort_array_desc(array)
-  array = array.new
-  array.sort
-  array.reverse
-end
-array
+  array.sort do | left, right|
+    right <=> left
+  end
 end
 
-
+sort_array_desc([25, 7, 14])
 
 def sort_array_char_count(array)
-  array = array.new
-  array.length
-  sort array length
-end
-array
+  array.sort do |left, right|
+    left.length <=> right.length
+  end
 end
 
-
+sort_array_char_count(["dogs", "cat", "Horses"])
 
 def swap_elements(array)
-  array = array.new
-  array swap index[1] and index[2]
-end
-array
-end
-
-
-
-def swap_elements_from_to(array)
-  array = ["a", "b", "c"]
-  swap_elements_from_to(["a", "b", "c"],2,1)
-end
-array
-end
-
-
-
-def reverse_array(array)
-  array = array.new
-  array.reverse
-end
-array
-end
-
-
-
-def kesha_maker(array)
-  array = array.new
-array.each do |something|
-  something = $
-end
-array
-end
-
-
-
-def find_a(array)
-  array = array.new
-  array.find do |starts with "a"|
-  end
+  array[1], array[2] = array[2], array[1]
   array
 end
 
+swap_elements(["blake", "ashley", "scott"])
 
+def reverse_array(array)
+  array.reverse
+end
+
+reverse_array(["blake", "ashley", "scott"])
+
+def kesha_maker(array)
+  array.each do |item|
+    item[2] = "$"
+  end
+end
+
+kesha_maker(["blake", "ashley", "scott"])
+
+def find_a(array)
+  array.find_all do |word|
+    word[0] == "a"
+  end
+end
+
+find_a(["apple", "orange", "pear", "avis", "arlo", "ascot" ])
 
 def sum_array(array)
-  array = array.new
-  array adds
+  sum = 0
+  array.each do |num|
+    sum+=num
+  end
+  sum
 end
-array
 end
 
-
+sum_array([11,4,7,8,9,100,134])
 
 def add_s(array)
-  array = array.new
-  add s to each element except 1
+  array.collect do |word|
+    if array[1] == word
+      word
+    else
+      word + "s"
+    end
+  end
 end
-array
-end
+
+add_s(["hand","feet", "knee", "table"])
